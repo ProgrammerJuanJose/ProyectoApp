@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoApp.Views.PuntajesPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Calculo de puntajes" FontSize="30" Padding="30"/>
+
+            <Label Text="Ejercicio 1" FontSize="20" />
+            <Entry x:Name="TxtPuntos1" Placeholder="Puntos" Keyboard="Numeric" ClearButtonVisibility="WhileEditing">
+                <Entry.Triggers>
+                    <Trigger TargetType="Entry" Property="IsFocused" Value="True" >
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="FontAttributes" Value="Bold"/>
+                    </Trigger>
+                </Entry.Triggers>
+            </Entry>
+
+            <Label Text="Ejercicio 2" FontSize="20" />
+            <Entry x:Name="TxtPuntos2" Placeholder="Puntos" Keyboard="Numeric" ClearButtonVisibility="WhileEditing">
+                <Entry.Triggers>
+                    <Trigger TargetType="Entry" Property="IsFocused" Value="True" >
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="FontAttributes" Value="Bold"/>
+                    </Trigger>
+                </Entry.Triggers>
+            </Entry>
+
+            <Label Text="Ejercicio 3" FontSize="20" />
+            <Entry x:Name="TxtPuntos3" Placeholder="Puntos" Keyboard="Numeric" ClearButtonVisibility="WhileEditing">
+                <Entry.Triggers>
+                    <Trigger TargetType="Entry" Property="IsFocused" Value="True" >
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="FontAttributes" Value="Bold"/>
+                    </Trigger>
+                </Entry.Triggers>
+            </Entry>
+
+            <Label Text="Ejercicio 4" FontSize="20" />
+            <Entry x:Name="TxtPuntos4" Placeholder="Puntos" Keyboard="Numeric" ClearButtonVisibility="WhileEditing">
+                <Entry.Triggers>
+                    <Trigger TargetType="Entry" Property="IsFocused" Value="True" >
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="FontAttributes" Value="Bold"/>
+                    </Trigger>
+                </Entry.Triggers>
+            </Entry>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

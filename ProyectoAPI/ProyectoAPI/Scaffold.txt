@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext -f "SERVER=JUANJOSECHA; DATABASE=ProyectoFinal; Trusted_Connection=True; TrustServerCertificate =True; INTEGRATED SECURITY=FALSE; USER ID=ProyectoUserApi; PASSWORD=1234" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models

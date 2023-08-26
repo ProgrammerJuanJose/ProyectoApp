@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoApp.Views.ModificarUsuarioPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+
+                <Entry x:Name="TxtID" IsEnabled="False" VerticalTextAlignment="Center" />
+
+                <Entry x:Name="TxtEmail" IsEnabled="False" Placeholder="Nombre de usuario o correo" Keyboard="Email" ClearButtonVisibility="WhileEditing" />
+
+                <Entry x:Name="TxtName" Placeholder="Nombre" Keyboard="Text" ClearButtonVisibility="WhileEditing">
+                    <Entry.Triggers>
+                    <Trigger TargetType="Entry" Property="IsFocused" Value="True" >
+                        <Setter Property="FontSize" Value="20"/>
+                            <Setter Property="FontAttributes" Value="Bold"/>
+                        </Trigger>
+                    </Entry.Triggers>
+                </Entry>
+
+                <Entry x:Name="TxtCedula" Placeholder="Cedula" Keyboard="Numeric" ClearButtonVisibility="WhileEditing">
+                    <Entry.Triggers>
+                    <Trigger TargetType="Entry" Property="IsFocused" Value="True" >
+                        <Setter Property="FontSize" Value="20"/>
+                            <Setter Property="FontAttributes" Value="Bold"/>
+                        </Trigger>
+                    </Entry.Triggers>
+                </Entry>
+
+                <Entry x:Name="TxtPhoneNumber" Placeholder="Teléfono" Keyboard="Telephone" ClearButtonVisibility="WhileEditing">
+                    <Entry.Triggers>
+                    <Trigger TargetType="Entry" Property="IsFocused" Value="True" >
+                        <Setter Property="FontSize" Value="20"/>
+                            <Setter Property="FontAttributes" Value="Bold"/>
+                        </Trigger>
+                    </Entry.Triggers>
+                </Entry>
+
+            <Editor x:Name="TxtAddress" Placeholder="Direccion" MinimumHeightRequest="0" AutoSize="TextChanges" Keyboard="Text">
+                <Editor.Triggers>
+                    <Trigger TargetType="Editor" Property="IsFocused" Value="True" >
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="FontAttributes" Value="Bold"/>
+                    </Trigger>
+                </Editor.Triggers>
+            </Editor>
+
+            <Button x:Name="BtnUpdate" Text="Aplicar cambios" CornerRadius="15" BackgroundColor="DarkGreen" FontSize="20" Clicked="BtnUpdate_Clicked" />
+                    <Button x:Name="BtnCancel" Text="Cancelar" CornerRadius="15" BackgroundColor="Maroon" FontSize="20" Clicked="BtnCancel_Clicked" />
+                
+                </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
